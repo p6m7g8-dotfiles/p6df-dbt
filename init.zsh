@@ -23,4 +23,6 @@ p6df::modules::dbt::langs() {
 
   pip install dbt-postgres
   pip install dbt-snowflake
+
+  p6_return_void
 }
