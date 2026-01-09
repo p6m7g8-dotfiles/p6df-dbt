@@ -21,8 +21,8 @@ p6df::modules::dbt::deps() {
 ######################################################################
 p6df::modules::dbt::langs() {
 
-  pip install dbt-postgres
-  pip install dbt-snowflake
+#  pip install dbt-postgres   # TODO: convert to uv
+#  pip install dbt-snowflake  # TODO: convert to uv
 
   p6_return_void
 }
