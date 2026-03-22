@@ -22,8 +22,7 @@ p6df::modules::dbt::deps() {
 ######################################################################
 p6df::modules::dbt::langs() {
 
-  uv tool install dbt-postgres
-  uv tool install dbt-snowflake
+  uv tool install dbt-core --with dbt-postgres --with dbt-snowflake
 
   p6_return_void
 }
