@@ -9,6 +9,7 @@
 p6df::modules::dbt::deps() {
   ModuleDeps=(
     p6m7g8-dotfiles/p6df-python
+    dbt-labs/dbt-agent-skills
   )
 }
 
@@ -21,8 +22,8 @@ p6df::modules::dbt::deps() {
 ######################################################################
 p6df::modules::dbt::langs() {
 
-#  pip install dbt-postgres   # TODO: convert to uv
-#  pip install dbt-snowflake  # TODO: convert to uv
+  uv tool install dbt-postgres
+  uv tool install dbt-snowflake
 
   p6_return_void
 }
