@@ -16,6 +16,31 @@ p6df::modules::dbt::deps() {
 ######################################################################
 #<
 #
+# Function: p6df::modules::dbt::home::symlinks()
+#
+#  Environment:	 HOME P6_DFZ_SRC_DIR
+#>
+######################################################################
+p6df::modules::dbt::home::symlinks() {
+
+  p6_file_symlink "$P6_DFZ_SRC_DIR/dbt-labs/dbt-agent-skills/skills/dbt/skills/adding-dbt-unit-test"                              "$HOME/.claude/skills/adding-dbt-unit-test"
+  p6_file_symlink "$P6_DFZ_SRC_DIR/dbt-labs/dbt-agent-skills/skills/dbt/skills/answering-natural-language-questions-with-dbt"     "$HOME/.claude/skills/answering-natural-language-questions-with-dbt"
+  p6_file_symlink "$P6_DFZ_SRC_DIR/dbt-labs/dbt-agent-skills/skills/dbt/skills/building-dbt-semantic-layer"                      "$HOME/.claude/skills/building-dbt-semantic-layer"
+  p6_file_symlink "$P6_DFZ_SRC_DIR/dbt-labs/dbt-agent-skills/skills/dbt/skills/configuring-dbt-mcp-server"                       "$HOME/.claude/skills/configuring-dbt-mcp-server"
+  p6_file_symlink "$P6_DFZ_SRC_DIR/dbt-labs/dbt-agent-skills/skills/dbt-extras/skills/creating-mermaid-dbt-dag"                  "$HOME/.claude/skills/creating-mermaid-dbt-dag"
+  p6_file_symlink "$P6_DFZ_SRC_DIR/dbt-labs/dbt-agent-skills/skills/dbt/skills/fetching-dbt-docs"                                "$HOME/.claude/skills/fetching-dbt-docs"
+  p6_file_symlink "$P6_DFZ_SRC_DIR/dbt-labs/dbt-agent-skills/skills/dbt-migration/skills/migrating-dbt-core-to-fusion"           "$HOME/.claude/skills/migrating-dbt-core-to-fusion"
+  p6_file_symlink "$P6_DFZ_SRC_DIR/dbt-labs/dbt-agent-skills/skills/dbt-migration/skills/migrating-dbt-project-across-platforms" "$HOME/.claude/skills/migrating-dbt-project-across-platforms"
+  p6_file_symlink "$P6_DFZ_SRC_DIR/dbt-labs/dbt-agent-skills/skills/dbt/skills/running-dbt-commands"                             "$HOME/.claude/skills/running-dbt-commands"
+  p6_file_symlink "$P6_DFZ_SRC_DIR/dbt-labs/dbt-agent-skills/skills/dbt/skills/troubleshooting-dbt-job-errors"                   "$HOME/.claude/skills/troubleshooting-dbt-job-errors"
+  p6_file_symlink "$P6_DFZ_SRC_DIR/dbt-labs/dbt-agent-skills/skills/dbt/skills/using-dbt-for-analytics-engineering"              "$HOME/.claude/skills/using-dbt-for-analytics-engineering"
+
+  p6_return_void
+}
+
+######################################################################
+#<
+#
 # Function: p6df::modules::dbt::langs()
 #
 #>
