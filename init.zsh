@@ -65,6 +65,6 @@ p6df::modules::dbt::langs() {
 ######################################################################
 p6df::modules::dbt::profile::mod() {
 
-  p6_return_words 'dbt' '$DBT_PROFILES_DIR'
+  p6_return_words 'dbt' "$"
 }
 
