@@ -51,20 +51,3 @@ p6df::modules::dbt::langs() {
 
   p6_return_void
 }
-
-######################################################################
-#<
-#
-# Function: words dbt $DBT_PROFILES_DIR = p6df::modules::dbt::profile::mod()
-#
-#  Returns:
-#	words - dbt $DBT_PROFILES_DIR
-#
-#  Environment:	 DBT_PROFILES_DIR
-#>
-######################################################################
-p6df::modules::dbt::profile::mod() {
-
-  p6_return_words 'dbt' "$"
-}
-
