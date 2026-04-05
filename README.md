@@ -36,6 +36,7 @@ TODO: Add a short summary of this module.
 ##### p6df-dbt/init.zsh
 
 - `p6df::modules::dbt::deps()`
+- `p6df::modules::dbt::home::symlinks()`
 - `p6df::modules::dbt::langs()`
 
 ## Hierarchy
